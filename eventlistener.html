@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            cursor: pointer;
+            background-color: lightseagreen;
+            padding: 40px;
+            width: 200px;
+            text-align: center;
+            margin: 20px auto;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <title>EventListener</title>
+</head>
+<body>
+    <div id="box">Open the box</div>
+
+    <script>
+        let boxBtn = document.getElementById("box")
+        boxBtn.addEventListener("click", function() {
+            window.alert("You clicked me.")
+        });
+    </script>
+</body>
+</html>
