@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{
+        body {
             padding: 10px;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
-        #input-el{
+
+        #input-el {
             width: 100%;
             padding: 10px;
             margin: 0%;
             box-sizing: border-box;
         }
-        #input-el:hover{
+
+        #input-el:hover {
             width: 99%;
             padding: 10px;
             margin: 0%;
-            background-color:rgb(185, 226, 213);
+            background-color: rgb(185, 226, 213);
             box-sizing: border-box;
         }
-        button{
+
+        button {
             background-color: #5f9341;
             color: white;
             padding: 10px 20px;
@@ -34,11 +38,14 @@
     </style>
     <title>First Chrome Extension</title>
 </head>
+
 <body>
-    <input type="text" id="input-el">
+    <label for="text"></label>
+    <input type="text" id="input-el" placeholder="Name">
     <button id="input-btn">SAVE INPUT</button>
     <ul id="unordered-list"></ul>
 
     <script src="first-chrome-extension.js"></script>
 </body>
+
 </html>
