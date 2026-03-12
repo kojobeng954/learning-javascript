@@ -1,17 +1,26 @@
-let myLeads = ["www.awesomeleads.com", "www.epiclead.com","www.greatlead.com"]
+let myLeads = []
 const inputEl = document.getElementById("input-el")
 const buttonCLicked = document.getElementById("input-btn")
 const ulEl = document.getElementById("unordered-list")
 
 buttonCLicked.addEventListener("click", function() {
-    let inputWord = inputEl.value
-    console.log(inputWord)
+    myLeads.push(inputEl.value)
+    renderLeads()
+    document.getElementById("input-el").value = ""
 });
 
-for (let i = 0; i < myLeads.length; i++) {
-    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+function renderLeads() {
+    let listItems = ""
 
-    let list = document.createElement("li")
-    list.textContent = myLeads[i]
-    ulEl.append(list)
+for (let i = 0; i < myLeads.length; i++) {
+    listItems += `
+    <li>
+        <a href='${myLeads[i]}' target='_blank' title ='link to website'>${myLeads[i]}</a>
+    </li>`
+    }
+    ulEl.innerHTML = listItems
+
+    // let list = document.createElement("li")
+    // list.textContent = myLeads[i]
+    // ulEl.append(list)
 }

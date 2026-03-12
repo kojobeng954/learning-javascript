@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+</head>
+<style>
+    body {
+        background-color: #016f32;
+        text-align: center;
+        font-family: cursive;
+    }
+
+    .heading {
+        color: whitesmoke;
+    }
+
+    .heading h1 {
+        margin: 0 0 10px 0;
+    }
+
+    .display-numbers {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10%;
+    }
+
+    .players {
+        border: none;
+        background-color: goldenrod;
+        border-radius: 10px 0px;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    #start-button {
+        background-color: goldenrod;
+        padding: 15px;
+        border: none;
+        border-radius: 0px 10px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!--TITLE-->
+    <div class="heading">
+        <h1>MINI RANDOM NUMBER DICE GAME</h1>
+        <p>Two players only, click the button below to begin the game</p>
+    </div>
+
+    <!--DISPLAY BOARD-->
+    <div class="display-numbers">
+        <h2 class="players" id="player-one"></h2>
+        <h2 class="players" id="player-two"></h2>
+    </div>
+
+    <button id="start-button">START GAME</button>
+
+    <!--DISPLAY WINNER OR LOSER-->
+    <h2 class="win-or-lose"></h2>
+
+    <script src="dice-game-trial.js"></script>
+</body>
+
+</html>
