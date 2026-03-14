@@ -3,10 +3,13 @@ const inputEl = document.getElementById("input-el")
 const buttonCLicked = document.getElementById("input-btn")
 const ulEl = document.getElementById("unordered-list")
 
+let leadsFromLocalStorage = localStorage.getItem("myLeads", JSON.parse(myLeads))
+
 buttonCLicked.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     renderLeads()
     document.getElementById("input-el").value = ""
+    myLeads = localStorage.setItem("myLeads", JSON.stringify(myLeads))
 });
 
 function renderLeads() {
