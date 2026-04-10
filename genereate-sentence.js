@@ -9,3 +9,5 @@ function generateSentence(description, array) {
         }
     }
 }
+
+generateSentence(" biggest countries in the world", ["China", "India", "USA", "Indonesia", "Pakistan"])

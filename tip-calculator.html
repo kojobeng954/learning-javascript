@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        * {
+            font-family: cursive;
+            background-color: gold;
+            text-align: center;
+        }
+
+        .bill-amount {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        #tip-amount {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .num-of-people {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        button {
+            background-color: rgb(27, 151, 27);
+            padding: 10px 30px;
+            cursor: pointer;
+            border: none;
+            border-radius: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tip Calculator</h1>
+    </header>
+
+    <section>
+        <div class="bill-amount">
+            <h2>How much was your food?</h2>
+            <p class="bill"></p>
+        </div>
+        <div id="tip-amount">
+            <h2>Tip Amount</h2>
+            <p id="tip"></p>
+        </div>
+        <div class="num-of-people">
+            <h2>How many people ate?</h2>
+            <p class="humans"></p>
+        </div>
+
+        <button id="calc-btn">Calculate Bill</button>
+        <p id="final-formula"></p>
+    </section>
+
+    <script src="tip-calculator.js"></script>
+</body>
+
+</html>
